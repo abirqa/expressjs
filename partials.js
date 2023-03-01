@@ -28,10 +28,6 @@ app.get("/about", (req, res) => {
       res.send(
         `City Is ${realCityData} and current Temperature is ${realTempData}`
       );
-      //res.send(objData[0].current.temp_c);
-      // console.log(
-      //   `city name is ${objData[0].location.name} and the temperature is ${objData[0].current.temp_c}`
-      // );
     })
     .on("end", (err) => {
       if (err) return console.log("connection closed due to errors", err);
